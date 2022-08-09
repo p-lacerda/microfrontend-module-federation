@@ -1,0 +1,46 @@
+{
+  "name": "microfrontend-module-federation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router": "6.0.0-beta.0",
+    "react-router-dom": "6.0.0-beta.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/preset-react": "7.12.10",
+    "babel-loader": "8.2.2",
+    "html-webpack-plugin": "5.5.0",
+    "serve": "11.3.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "4.9.3"
+  },
+  "scripts": {
+    "start": "webpack-cli serve",
+    "build": "webpack --mode production",
+    "serve": "serve dist -p 3000",
+    "clean": "rm -rf dist"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
